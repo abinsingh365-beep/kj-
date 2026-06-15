@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Pickle - KJ Pickles</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff9800, #ff5722);
+            min-height: 100vh;
+            color: white;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* Product Section */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product img {
+            width: 400px;
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .details {
+            max-width: 500px;
+        }
+
+        .details h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .details p {
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* Sections */
+        .section {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            margin-top: 40px;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .section h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .section ul {
+            list-style: none;
+        }
+
+        .section li {
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        .section li::before {
+            content: "✔ ";
+            color: #fff176;
+            font-weight: bold;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: white;
+            color: #ff5722;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.15);
+        }
+
+        @media(max-width:768px) {
+            .details h2 {
+                font-size: 32px;
+            }
+
+            header h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>KJ PICKLES 🥭</h1>
+        <p>Traditional Homemade Pickles with Authentic Taste</p>
+    </header>
+
+    <div class="container">
+
+        <div class="product">
+            <img src="../images/mango.jpg" alt="Mango Pickle">
+
+            <div class="details">
+                <h2>Mango Pickle 🥭</h2>
+
+                <p>
+                    KJ Mango Pickle is made from carefully selected fresh raw mangoes,
+                    blended with traditional spices and premium quality ingredients.
+                    It delivers a rich, spicy, tangy, and authentic homemade taste
+                    that perfectly complements rice, chapati, dosa, and other meals.
+                </p>
+
+                📞 <a href="tel:9567974820" class="btn" style="color:white;background-color: rgb(18, 180, 0);">
+                    9567974820
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>About This Product</h3>
+
+            <p>
+                Our Mango Pickle is prepared using a traditional family recipe that
+                preserves the authentic flavor of homemade pickles. Every jar is
+                crafted with care, ensuring freshness, quality, and the perfect
+                balance of spice and tanginess.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Ingredients</h3>
+
+            <ul>
+                <li>Fresh Raw Mangoes</li>
+                <li>Red Chilli Powder</li>
+                <li>Mustard Seeds</li>
+                <li>Fenugreek Seeds</li>
+                <li>Turmeric Powder</li>
+                <li>Rock Salt</li>
+                <li>Gingelly Oil / Sesame Oil</li>
+                <li>Garlic (Optional)</li>
+                <li>Traditional Spice Mix</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <h3>© 2026 KJ Pickles</h3>
+        <p>Made with ❤️ and Traditional Flavours</p>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

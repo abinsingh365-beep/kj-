@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KJ Pickles</title>
+
+<style>
+
+    
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ff9800,#ff5722);
+    color:white;
+    min-height:100vh;
+}
+
+/* Header */
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:70px;
+    letter-spacing:5px;
+    text-shadow:0 0 20px rgba(255,255,255,0.5);
+}
+
+header span{
+    color:#fff176;
+}
+
+header p{
+    margin-top:15px;
+    font-size:22px;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:40px 20px;
+    animation:fadeIn 1.5s ease;
+}
+
+.hero h2{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.hero button{
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff5722;
+    font-size:18px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.1);
+}
+
+/* Product Section */
+.products{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:50px 20px;
+}
+
+.card{
+    width:300px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    padding:15px;
+    font-size:28px;
+}
+
+.card p{
+    text-align:center;
+    padding:0 15px 15px;
+}
+
+.card button{
+    display:block;
+    margin:0 auto 20px;
+    padding:10px 25px;
+    border:none;
+    border-radius:25px;
+    background:white;
+    color:#ff5722;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.card button a{
+    text-decoration:none;
+    color:#ff5722;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.15);
+}
+
+footer h4{
+    color:#fff176;
+    font-size:22px;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin-top:5px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:45px;
+    }
+
+    .hero h2{
+        font-size:35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1><span>KJ</span> PICKLES</h1>
+    <p>Traditional Taste • Homemade Quality • Pure Ingredients</p>
+</header>
+
+<section class="hero">
+    <h2>Welcome to KJ Pickles 🥭</h2>
+    <p>Fresh, Authentic and Delicious Pickles Made With Love.</p>
+    <button>Explore Products</button>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="../images/mango.jpg" alt="Mango Pickle">
+        <h3>🥭 Mango Pickle</h3>
+        <p>Spicy traditional mango pickle with rich flavor.</p>
+        <button><a href="./aboutMango.html">About This</a></button>
+    </div>
+
+    <div class="card">
+        <img src="../images/lemon.jpg" alt="Lemon Pickle">
+        <h3>🍋 Lemon Pickle</h3>
+        <p>Tangy and flavorful lemon pickle made naturally.</p>
+        <button><a href="./aboutLemon.html">About This</a></button>
+    </div>
+
+    <div class="card">
+        <img src="../images/garlic.jpg" alt="Garlic Pickle">
+        <h3>🧄 Garlic Pickle</h3>
+        <p>Delicious garlic pickle with authentic homemade taste.</p>
+        <button><a href="./aboutGarlic.html">About This</a></button>
+    </div>
+
+</section>
+
+<footer>
+    <h3>© 2026 KJ Pickles</h3>
+    <p>Made with ❤️ for Pickle Lovers</p>
+
+    <h4>Founder & Owners</h4>
+    <p><strong>Abin Singh K J</strong></p>
+    <p><strong>Vimala V B</strong></p>
+</footer>
+
+</body>
+</html>
